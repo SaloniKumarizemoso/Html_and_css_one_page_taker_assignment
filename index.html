@@ -1,29 +1,97 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My One-Page Assignment</title>
-    <meta name="description" content="This is a simple one-page HTML assignment." />
+    <title>My Portfolio</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>My One-Page Assignment</h1>
+      <h1>My Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#education">My eduacation details</a></li>
+          <li><a href="#skill">My skill </a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <h2>About Me</h2>
-      <p>Hi, My name is Saloni Kumari and I'm a student at Haldia Institute Of Technology. I'm studying computer science and I'm really passionate about web development.</p>
-      <h2>My Skills</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>C++</li>
-        <li>Java</li>
-      </ul>
-      <h2>My Projects</h2>
-      <ol>
-        <li><a href="#">Circuit Solver simulation Tool</a></li>
-      </ol>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am Saloni Kumari from Giridih Jharkhand currently pursuing B.Tech in Computer Science & Engineering from Haldia Institute of Technology and working as a dev intern in Zemoso Technologies.
+        </p>
+      </section>
+      <section id="education">
+        <h2>My Education details</h2>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col" colspan="2">College/School</th>
+              <th scope="col" colspan="2">Degree</th>
+              <th scope="col">CGPA/Percentage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="3">Haldia Institute Of Technology</td>
+              <td>B.Tech</td>
+              <td>9.2</td>
+            </tr>
+            <tr>
+              <td colspan="3">Guru Gobind Singh Public School</td>
+              <td>Intermediate</td>
+              <td>83%</td>
+            </tr>
+            <tr>
+              <td colspan="3">Jawahar Navodaya Vidyalaya Giridih</td>
+              <td>Matriculation</td>
+              <td>10</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="skill">
+        <h2>Skills</h2>
+        <ul>
+          <li>
+            <h3>Circuit solver simulation tool using c++</h3>
+            <p>
+              It is basically the concept of simulation tool used to design and solve small electrical circuit and determine the potential at every node. The interface is designed using c++
+              graphics.C++ structure is used to handle the interface design using graphics.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <h3>Circuit solver simulation tool using c++</h3>
+            <p>
+              It is basically the concept of simulation tool used to design and solve small electrical circuit and determine the potential at every node. The interface is designed using c++
+              graphics.C++ structure is used to handle the interface design using graphics.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="submit-form.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" /><br />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea><br />
+          <button type="submit">Send</button>
+        </form>
+      </section>
     </main>
   </body>
 </html>
